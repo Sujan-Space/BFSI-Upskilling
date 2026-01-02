@@ -127,5 +127,5 @@ The following tools are required to work with this project:
 ### 1. **Clone the Repository**
    Clone this repository to your local machine:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/Sujan-Space
+   cd Sujan-Space
