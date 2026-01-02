@@ -129,3 +129,70 @@ The following tools are required to work with this project:
    ```bash
    git clone https://github.com/Sujan-Space
    cd Sujan-Space
+````
+
+### 2. **Configure Database Connections**
+
+* Ensure MySQL, MongoDB, and MSSQL are running with the provided credentials.
+* Modify your `application.properties` (or equivalent configuration file) with the correct database connection details.
+
+### 3. **Start the Project**
+
+For Spring Boot, you can run the project with the following Maven command:
+
+```bash
+mvn spring-boot:run
+```
+
+### 4. **Run Tests**
+
+You can run tests using **JUnit5** or **TestNG**, depending on your configuration.
+To run tests with Maven:
+
+```bash
+mvn test
+```
+
+### 5. **Start Apache Kafka**
+
+To start Kafka, use the following command:
+
+```bash
+/opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties
+```
+
+---
+
+## Notes
+
+* **Make sure to change the URLs and credentials** according to your local environment when running the programs.
+* The provided passwords are for local development. **Do not use these in production** environments.
+* For **Splunk**, ensure Docker is installed and running before starting the container.
+
+---
+
+## Troubleshooting
+
+* **Jupyter Notebook Not Starting**: If you encounter issues, make sure Python and Jupyter are correctly installed. You can install Jupyter with:
+
+  ```bash
+  pip install notebook
+  ```
+
+* **MySQL Not Starting**: Ensure MySQL is installed and running with the correct credentials. You can start MySQL with:
+
+  ```bash
+  systemctl start mysql
+  ```
+
+---
+
+Feel free to adjust any instructions or details specific to your project's needs. Let me know if you need further customizations!
+
+```
+
+---
+
+This `README.md` provides a clean, structured guide to your project's setup, configuration, and common troubleshooting tips. You can further modify or add more specific instructions if needed.
+```
+
